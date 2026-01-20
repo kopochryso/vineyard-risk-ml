@@ -1,4 +1,4 @@
-🚀 Project Overview
+**🚀 Project Overview**
 
 This project is an end-to-end machine learning system that assesses vineyard vegetation risk using Sentinel-2 satellite imagery.
 
@@ -14,7 +14,7 @@ Serves predictions via a Dockerized FastAPI service
 
 
 
-🛰️ Data Source
+**🛰️ Data Source**
 
 Satellite: Sentinel-2 (Surface Reflectance)
 
@@ -30,7 +30,7 @@ Time span: 2022–2024 growing seasons
 
 
 
-🧠 Methodology
+**🧠 Methodology**
 
 1️⃣ NDVI Extraction (NDVI is computed per Sentinel-2 image --> Cloud and cirrus pixels are masked using the Scene Classification Layer (SCL) --> NDVI values are sampled at multiple grid points within the vineyard)
 
@@ -44,33 +44,33 @@ Time span: 2022–2024 growing seasons
 
 
 
-📂 Project Structure
-vineyard-risk-ml/
-│
-├── data/
-│   └── processed/
-│       └── vineyard_risk_dataset.csv
-│
-├── notebooks/
-│   ├── 01_ndvi_exploration.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   └── 03_clustering.ipynb
-│
-├── src/
-│   ├── artifacts.py
-│   ├── schemas.py
-│   └── predict.py
-│
-├── api/
-│   └── main.py
-│
-├── models/
-│   ├── kmeans.pkl
-│   ├── scaler.pkl
-│   ├── features.pkl
-│   └── risk_map.pkl
-│
-├── Dockerfile
-├── requirements.txt
-├── .gitignore
-└── README.md
+**📂 Project Structure**
+vineyard-risk-ml/  
+│  
+├── data/  
+│   └── processed/  
+│       └── vineyard_risk_dataset.csv  
+│  
+├── notebooks/  
+│   ├── 01_ndvi_exploration.ipynb  
+│   ├── 02_feature_engineering.ipynb  
+│   └── 03_clustering.ipynb  
+│  
+├── src/  
+│   ├── artifacts.py  
+│   ├── schemas.py  
+│   └── predict.py  
+│  
+├── api/  
+│   └── main.py  
+│  
+├── models/  
+│   ├── kmeans.pkl  
+│   ├── scaler.pkl  
+│   ├── features.pkl  
+│   └── risk_map.pkl  
+│  
+├── Dockerfile  
+├── requirements.txt  
+├── .gitignore  
+└── README.md  
